@@ -16,7 +16,7 @@ public class Challenge {
 	       
      	
  		String nombre = JOptionPane.showInputDialog("Ingresa tu nombre x favor :");
- 		JOptionPane.showMessageDialog(null, "Hola  " + nombre + ", Estás listo para la aventura? ¡Vamos!","Programa Conversor . Version 1.0", 1); 
+ 		JOptionPane.showMessageDialog(null, "Hola  " + nombre + ", estás listo para la aventura? ¡Vamos!","Programa Conversor . Version 1.0", 1); 
  		
  		 String[] Converter = { "Calcular el Tipo de Cambio Monetario","Calcular tu edad en otros planetas","Salir"};
    	      String option = (String) JOptionPane.showInputDialog(null, "Elija la operacion a salir : ", "Programa Conversor . Version 1.0",
@@ -95,7 +95,7 @@ while(option != "Salir"     ) {
        	 double num = Double.parseDouble(name);
        	 double result= num/1.88;
        			 
-    		JOptionPane.showMessageDialog(null, "Usted tendría en Marte " + result + " años");
+    		JOptionPane.showMessageDialog(null, "Usted tendría en Marte " + (String.format("%.2f", result) + " años");
     		break;
 	    
 	      case  "Edad en Venus":
@@ -104,7 +104,7 @@ while(option != "Salir"     ) {
        	 double num2 = Double.parseDouble(name2);
        	 double result2= num2/0.61;
        			 
-       	JOptionPane.showMessageDialog(null, "Usted tendría en Venus " + result2 + " años");
+       	JOptionPane.showMessageDialog(null, "Usted tendría en Venus " + (String.format("%.2f", result2) + " años");
         break;
 		
 	    case"Edad en Saturno":
@@ -113,7 +113,7 @@ while(option != "Salir"     ) {
        	 double num3 = Double.parseDouble(name3);
        	 double result3= num3/29.5;
        			 
-       	JOptionPane.showMessageDialog(null, "Usted tendría en Saturno " + result3 + " años");
+       	JOptionPane.showMessageDialog(null, "Usted tendría en Saturno " + (String.format("%.2f", result3) + " años");
         break;
         
 	    case "Edad en Mercurio":
@@ -122,7 +122,7 @@ while(option != "Salir"     ) {
        	 double num4 = Double.parseDouble(name4);
        	 double result4= num4/0.24;
        			 
-       	JOptionPane.showMessageDialog(null, "Usted tendría en Mercurio "+ result4 + " años");
+       	JOptionPane.showMessageDialog(null, "Usted tendría en Mercurio "+ (String.format("%.2f", result4) + " años");
         break;
         
 	    case "Edad en Júpiter":
@@ -131,7 +131,7 @@ while(option != "Salir"     ) {
        	 double num5 = Double.parseDouble(name5);
        	 double result5= num5/11.8;
        			 
-       	JOptionPane.showMessageDialog(null, "Usted tendría en Júpiter " + result5 + " años");
+       	JOptionPane.showMessageDialog(null, "Usted tendría en Júpiter " + (String.format("%.2f", result5) + " años");
         break;
         
    	
@@ -141,7 +141,7 @@ while(option != "Salir"     ) {
        	 double num6 = Double.parseDouble(name6);
        	 double result6= num6/84;
        			 
-       	JOptionPane.showMessageDialog(null, "Usted tendría en Urano " + result6 + " años");
+       	JOptionPane.showMessageDialog(null, "Usted tendría en Urano " + (String.format("%.2f", result6) + " años");
         break;
         
 	    case "Edad en Neptuno":
